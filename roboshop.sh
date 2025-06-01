@@ -48,6 +48,7 @@ do
 
     # Create JSON payload dynamically
     CHANGE_BATCH=$(cat <<EOF
+CHANGE_BATCH=$(cat <<EOF
 {
     "Comment": "Creating or Updating a record set for $instance",
     "Changes": [
@@ -68,6 +69,7 @@ do
 }
 EOF
 )
+
 
    
 
